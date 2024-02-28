@@ -144,10 +144,10 @@ span.tooltip {
 }
 
 .tooltip .tooltiptext {
-  width: 120px;
+  width: 200px;
   bottom: 100%;
   left: 50%;
-  margin-left: -60px;
+  margin-left: -100px;
   visibility: hidden;
   background-color: black;
   color: #fff;
@@ -157,7 +157,6 @@ span.tooltip {
   position: absolute;
   z-index: 1;
   opacity: 0;
-  transition-duration: opacity 0.5s;;
 }
 
 .tooltip:hover .tooltiptext {
