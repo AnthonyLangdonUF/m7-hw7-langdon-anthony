@@ -143,6 +143,28 @@ span.tooltip {
   cursor: pointer;
 }
 
+.tooltip .tooltiptext {
+  width: 120px;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+  visibility: hidden;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  transition-duration: opacity 0.5s;;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility:visible;
+  opacity: 1;
+}
+
 /* underline span on hover/focus */
 span.tooltip:hover,
 span.tooltip:focus {
@@ -161,5 +183,12 @@ span.tooltip span {
 
 /* styling for tooltip bubble arrow */
 span.tooltip span::after {
-  content: "";
+  content: " ";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
 }
